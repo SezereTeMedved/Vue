@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="charset">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    
+    <title>Vue</title>
+
+</head>
+<body>
+    <h1>TODO list</h1>
+
+    <div id="TODOlist">
+        <input v-model="vstup">
+        <button v-on:click="Pr_ukol">Přidat úkol</button>
+        <li v-for="(item,key) in items" v-model="">
+            {{ item.message }} <button @click="$delete(items, key)">Odstranit</button>
+        </li>
+    </div>
+
+
+
+    <script src="vue.js"></script>
+</body>
+</html>
